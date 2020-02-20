@@ -1,0 +1,52 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 16/07/2017 07:27
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("Flaticon.eot");
+  src: url("Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("Flaticon.woff") format("woff"),
+       url("Flaticon.ttf") format("truetype"),
+       url("Flaticon.html#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-arrows:before { content: "\f100"; }
+.flaticon-arrow:before { content: "\f101"; }
+.flaticon-clock:before { content: "\f102"; }
+.flaticon-signs:before { content: "\f103"; }
+.flaticon-map:before { content: "\f104"; }
+.flaticon-placeholder:before { content: "\f105"; }
+.flaticon-tractor-1:before { content: "\f106"; }
+.flaticon-eyeglasses:before { content: "\f107"; }
+.flaticon-speaker-symbol-of-voice-volume:before { content: "\f108"; }
+.flaticon-social-1:before { content: "\f109"; }
+.flaticon-photo:before { content: "\f10a"; }
+.flaticon-drink:before { content: "\f10b"; }
+.flaticon-tractor-side-view:before { content: "\f10c"; }
+.flaticon-nature-1:before { content: "\f10d"; }
+.flaticon-man-walking-talking-by-a-speaker:before { content: "\f10e"; }
+.flaticon-books-stack-of-three:before { content: "\f10f"; }
+.flaticon-tool:before { content: "\f110"; }
+.flaticon-facebook:before { content: "\f111"; }
+.flaticon-chil-hand-on-the-hand-of-an-adult:before { content: "\f112"; }
+.flaticon-archeologist:before { content: "\f113"; }
+.flaticon-charity:before { content: "\f114"; }
+.flaticon-book:before { content: "\f115"; }
+.flaticon-weather:before { content: "\f116"; }
+.flaticon-nature:before { content: "\f117"; }
+.flaticon-technology-1:before { content: "\f118"; }
+.flaticon-technology:before { content: "\f119"; }
+.flaticon-social:before { content: "\f11a"; }
+.flaticon-tractor:before { content: "\f11b"; }
+.flaticon-glasses:before { content: "\f11c"; }
+.flaticon-crawler-hand-drawn-transport:before { content: "\f11d"; }

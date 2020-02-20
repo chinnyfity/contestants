@@ -1,0 +1,23 @@
++ first generate a session for the week 37474674
+  monday    37474674  pics
+  tuesday   37474674  qz
+  Wed       37474674  pics
+
++ first generate a session for the week 99288383
+  monday    99288383
+  tuesday   99288383
+  Wed       99288383
+
+if set_weekly_activity expires
+- update its column has_done to 1
+- one_week_timings to be 0
+- update admin_set_activity2 in timings to 0 and has_done to 1
+- pageant_activities in expired to 1
+- quizes_intro in completeds to 1 and timings to 0
+
+if admin_set_activity2 expires
+- timings to 0
+- has_done to 1
+
+close_prev_contestant is when new ones want to come, the prev ones shud be set to 1 so that the old contestants will be cleared away from the home page. 
+Even if u want to create another session for another week, the previous close_prev_contestant will be updated to 1

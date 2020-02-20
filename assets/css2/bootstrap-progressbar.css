@@ -1,0 +1,161 @@
+/*! bootstrap-progressbar v0.9.0 | Copyright (c) 2012-2015 Stephan Groß | MIT license | http://www.minddust.com */
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.pb-box {
+    position: relative;
+    overflow: hidden;
+    margin-top: 28px;
+}
+.progress.vertical {
+  overflow: hidden;
+  height: 340px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.progress.vertical .progress-bar.pb1{background-color: #ff6c00;}
+.progress.vertical .progress-bar.pb2{background-color: #f0c24b;}
+.progress.vertical .progress-bar.pb3{background-color: #b5d56a;}
+.progress.vertical .progress-bar.pb4{background-color: #ea7066;}
+.progress.vertical .progress-bar.pb5{background-color: #84bed6;}
+.progress.vertical .progress-bar {
+  float: left;
+  width: 0%;
+  height: 340px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+.progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-info {
+  background-color: #5bc0de;
+}
+.progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress {
+  position: relative;
+}
+.progress.vertical .progress-bar span.title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 35px;
+    transform: rotate(-90deg);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+	}
+.progress.vertical .progress-bar span.percent {
+    position: relative;
+    top: -25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+	}
+.progress .progress-bar {
+  position: absolute;
+  line-height: 20px;
+    border-radius: 2px;
+}
+.progress .progressbar-back-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.progress .progressbar-front-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.progress.right .progress-bar {
+  right: 0;
+}
+.progress.right .progressbar-front-text {
+  position: absolute;
+  right: 0;
+}
+.progress.vertical {
+    width: 60px;
+    height: 350px;
+    float: left;
+    margin: 0 35px;
+}
+.progress.vertical.bottom {
+  position: relative;
+}
+.progress.vertical.bottom .progressbar-front-text {
+  position: absolute;
+  bottom: 0;
+}
+.progress.vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+}
+.progress.vertical.bottom .progress-bar {
+  position: absolute;
+  bottom: 0;
+    transform: initial;
+}
